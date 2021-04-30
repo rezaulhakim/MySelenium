@@ -4,13 +4,16 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import java.sql.Driver;
-public class Testcase1 {
-    public static void main(String[] args) {
+public class Testcase3 {
+    public static void main(String[]args){
+
+
 
         System.setProperty("webdriver.chrome.driver","C://Users//rezau//IdeaProjects//MySelenium//driver//chromedriver");
-        WebDriver drv = new ChromeDriver();
+        WebDriver drv=new ChromeDriver();
         drv.get("https://wellsfargo.com");
+        drv.findElement(By.xpath("//input[@id='password']")).click();
+
 
 
 
@@ -23,5 +26,4 @@ public class Testcase1 {
 
 
     }
-
 }

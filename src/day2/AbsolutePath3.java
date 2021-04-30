@@ -1,17 +1,18 @@
-package day1;
+package day2;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Testcase2 {
+public class AbsolutePath3 {
     public static void main(String[]args){
 
+
+
         System.setProperty("webdriver.chrome.driver","C://Users//rezau//IdeaProjects//MySelenium//driver//chromedriver");
-        WebDriver drv=new ChromeDriver();
-        drv.get("https://wellsfargo.com");
-        drv.findElement(By.xpath("//input[@id='password']")).click();
-        drv.findElement(By.xpath("//input[@name='j_username']")).sendKeys("ard@yahoo.com");
+        WebDriver driver=new ChromeDriver();
+        driver.get("http://amazon.com");
+        driver.findElement(By.xpath("")).click();
 
 
 
